@@ -9,7 +9,7 @@ website: mcpefr.pe.hu
 commands:
   rtp:
     description: "Teleport All Player to coordonate"
-    usage: "/admin"
+    usage: "/rtp"
 
 
 

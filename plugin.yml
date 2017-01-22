@@ -1,0 +1,15 @@
+name: RandomTP
+main: Palente\Main
+author: Palente
+description: Teleporte tout les joueur vers une coordonees inconnu
+version: 1
+api: [1.12.0,2.0.0]
+website: mcpefr.pe.hu
+
+commands:
+  admin:
+    description: "Teleport All Player to coordonate"
+    usage: "/admin"
+
+
+

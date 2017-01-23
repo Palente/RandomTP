@@ -8,7 +8,7 @@ use pocketmine\utils\TextFormat;
 use pocketmine\level\Level;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-class Main extends pluginBase implements Listener{
+class Main extends PluginBase{
 	public function onLoad() {
 		self::$logger = $this->getLogger();
 		self::$logger->info('Je charge #RTP');
@@ -26,12 +26,7 @@ foreach ($this->plugin->getServer()->getOnlinePlayers() as $player) {
 	$x = mt_rand('-300', '5000');
 	$y = mt_rand('70', '120');
 	$z = mt_rand('-300', '5000');
-$player->teleport($x, $y, $z);
-$player->sendTipMessage(str_repeat(" ", 20). 'Teleportation..... Dans une base inconnue');
-}
-
-
-	break;
+$player->teleport($x, $y, $z);}		$sender->sendMessage("§4Tout les Joueur on ete Tp a oendroit au hasard"); break;
 }
 }
 

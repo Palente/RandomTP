@@ -1,5 +1,5 @@
 <?php
-namespace Main;
+namespace Palente;
 
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;

@@ -9,7 +9,8 @@ use pocketmine\level\Level;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 class Main extends PluginBase{
-	public function onLoad() {
+	public static $logger = null;
+public function onLoad() {
 		self::$logger = $this->getLogger();
 		self::$logger->info('Je charge #RTP');
 	}

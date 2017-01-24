@@ -23,11 +23,12 @@ public function onCommand(CommandSender $sender, Command $cmd, $label, array $ar
 switch(strtolower($cmd->getName())) {
 	case 'rtp':
 if(!$sender->isOp()) return false;
-foreach ($this->plugin->getServer()->getOnlinePlayers() as $player) {
+foreach ($this->getServer()->getOnlinePlayers() as $player) {
 	$x = mt_rand('-300', '5000');
 	$y = mt_rand('70', '120');
 	$z = mt_rand('-300', '5000');
-$player->teleport($x, $y, $z);}		$sender->sendMessage("§4Tout les Joueur on ete Tp a oendroit au hasard"); break;
+$player->teleport($x, $y, $z);}		
+		$sender->sendMessage("§4Tout les Joueur on ete Tp a oendroit au hasard"); break;
 }
 }
 
